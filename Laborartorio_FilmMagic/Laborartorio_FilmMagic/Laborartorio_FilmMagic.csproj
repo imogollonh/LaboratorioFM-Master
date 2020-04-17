@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B9AFC88-6E28-4463-B5DF-B2D82D23DB36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laborartorio_FilmMagic</RootNamespace>
+    <AssemblyName>Laborartorio_FilmMagic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\Frm_consultaAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaAutor.Designer.cs">
+      <DependentUpon>Frm_consultaAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaCategoria.Designer.cs">
+      <DependentUpon>Frm_consultaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaCliente.Designer.cs">
+      <DependentUpon>Frm_consultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaConcepto.Designer.cs">
+      <DependentUpon>Frm_consultaConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaMembresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaMembresia.Designer.cs">
+      <DependentUpon>Frm_consultaMembresia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaproducto.Designer.cs">
+      <DependentUpon>Frm_consultaproducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaproveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaproveedor.Designer.cs">
+      <DependentUpon>Frm_consultaproveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultasucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultasucursal.Designer.cs">
+      <DependentUpon>Frm_consultasucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoProducto.Designer.cs">
+      <DependentUpon>Frm_consultaTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantCategoria.Designer.cs">
+      <DependentUpon>Frm_MantCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantAutor.Designer.cs">
+      <DependentUpon>Frm_MantAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantCliente.Designer.cs">
+      <DependentUpon>Frm_MantCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantConcepto.Designer.cs">
+      <DependentUpon>Frm_MantConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantMembresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantMembresia.Designer.cs">
+      <DependentUpon>Frm_MantMembresia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTipoProducto.Designer.cs">
+      <DependentUpon>Frm_MantTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_productos.Designer.cs">
+      <DependentUpon>Frm_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Proveedores.Designer.cs">
+      <DependentUpon>Frm_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_sucursal.Designer.cs">
+      <DependentUpon>Frm_sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal.Designer.cs">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consultas\Frm_consultaAutor.resx">
+      <DependentUpon>Frm_consultaAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaCategoria.resx">
+      <DependentUpon>Frm_consultaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaCliente.resx">
+      <DependentUpon>Frm_consultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaConcepto.resx">
+      <DependentUpon>Frm_consultaConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaMembresia.resx">
+      <DependentUpon>Frm_consultaMembresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaproducto.resx">
+      <DependentUpon>Frm_consultaproducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaproveedor.resx">
+      <DependentUpon>Frm_consultaproveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultasucursal.resx">
+      <DependentUpon>Frm_consultasucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaTipoProducto.resx">
+      <DependentUpon>Frm_consultaTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantCategoria.resx">
+      <DependentUpon>Frm_MantCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantAutor.resx">
+      <DependentUpon>Frm_MantAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantCliente.resx">
+      <DependentUpon>Frm_MantCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantConcepto.resx">
+      <DependentUpon>Frm_MantConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantMembresia.resx">
+      <DependentUpon>Frm_MantMembresia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantTipoProducto.resx">
+      <DependentUpon>Frm_MantTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_productos.resx">
+      <DependentUpon>Frm_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_Proveedores.resx">
+      <DependentUpon>Frm_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_sucursal.resx">
+      <DependentUpon>Frm_sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Logica\Capa_Logica.csproj">
+      <Project>{d296e6a0-d36d-4322-baef-7eb2912dd7a6}</Project>
+      <Name>Capa_Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorFondo.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
